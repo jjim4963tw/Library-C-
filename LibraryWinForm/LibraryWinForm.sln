@@ -5,6 +5,8 @@ VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryWinForm", "LibraryWinForm\LibraryWinForm.csproj", "{63910D27-238C-4229-AA5B-FEC9B73C0F04}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryWPF", "LibraryWPF\LibraryWPF.csproj", "{C3944B51-7AA9-4078-803A-7B7BFFFB53DE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{63910D27-238C-4229-AA5B-FEC9B73C0F04}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{63910D27-238C-4229-AA5B-FEC9B73C0F04}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{63910D27-238C-4229-AA5B-FEC9B73C0F04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3944B51-7AA9-4078-803A-7B7BFFFB53DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3944B51-7AA9-4078-803A-7B7BFFFB53DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3944B51-7AA9-4078-803A-7B7BFFFB53DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3944B51-7AA9-4078-803A-7B7BFFFB53DE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
