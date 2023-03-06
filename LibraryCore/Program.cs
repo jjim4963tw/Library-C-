@@ -1,5 +1,7 @@
 ﻿using LibraryCore.Utility;
 using System;
+using System.Threading;
+using System.Threading.Tasks;
 using WebStorageDrive.Utility;
 
 namespace LibraryCore
@@ -12,14 +14,17 @@ namespace LibraryCore
             {
                 RunHelperFunction();
             }
+            else if (args[0].ToLower() == "/netstate")
+            {
+                CheckNetworkStatus();
+            }
             else if (args[0].ToLower() == "/time")
             {
                 string type = "0";
-                try
+                if (args.Length > 1 && !string.IsNullOrEmpty(args[1]))
                 {
                     type = args[1];
                 }
-                catch { }
 
                 GetNowSystemTime(type);
             }
@@ -39,10 +44,23 @@ namespace LibraryCore
         {
             Console.WriteLine("使用方式：LibraryCore [/h] [/v]");
             Console.WriteLine();
-            Console.WriteLine("/h-      查詢指令");
-            Console.WriteLine("/v-      查詢系統資訊");
-            Console.WriteLine("/time-   查詢目前時間 (搭配參數：0 為當地時間；1 為UTC 時間，預設為0)");
+            Console.WriteLine("/h-          查詢指令");
+            Console.WriteLine("/v-          查詢系統資訊");
+            Console.WriteLine("/netstate-   檢測網路狀態");
+            Console.WriteLine("/time-       查詢目前時間 (搭配參數：0 為當地時間；1 為UTC 時間，預設為0)");
         }
+        //
+        // 摘要:
+        //     /netstate：偵測目前是否有網路。
+        private static void CheckNetworkStatus()
+        {
+            while (true)
+            {
+                Console.WriteLine("Network Status：" + NetworkUtility.CheckNetworkStatusFunction());
+                Thread.Sleep(1000);
+            }
+        }
+
         //
         // 摘要:
         //     /time [0/1]：取得當前時間，0 為當地時間；1 為 UTC 時間。
