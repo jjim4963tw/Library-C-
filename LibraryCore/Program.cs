@@ -1,7 +1,7 @@
 ﻿using LibraryCore.Utility;
+using LibraryCore.Manager;
 using System;
 using System.Threading;
-using System.Threading.Tasks;
 using WebStorageDrive.Utility;
 
 namespace LibraryCore
@@ -28,7 +28,7 @@ namespace LibraryCore
 
                 GetNowSystemTime(type);
             }
-            else if (args[0].ToLower() == "/v") 
+            else if (args[0].ToLower() == "/v")
             {
                 GetSystemInfo();
             }
@@ -37,6 +37,9 @@ namespace LibraryCore
             Console.Write("Press any key to continue...");
             Console.ReadKey();
         }
+
+
+        #region Private Function
         //
         // 摘要:
         //     /h：顯示幫助區塊，包括可使用指令。
@@ -60,7 +63,6 @@ namespace LibraryCore
                 Thread.Sleep(1000);
             }
         }
-
         //
         // 摘要:
         //     /time [0/1]：取得當前時間，0 為當地時間；1 為 UTC 時間。
@@ -79,5 +81,6 @@ namespace LibraryCore
             Console.WriteLine("Device Name：" + ConfigUtility.Instance.GetMachineName);
             Console.WriteLine("Device Model：" + ConfigUtility.Instance.SystemModel);
         }
+        #endregion    
     }
 }
