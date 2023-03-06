@@ -1,0 +1,12 @@
+LibraryCore/bin/*
+LibraryWinForms/bin/*
+LibraryWPF/bin/*
+LibraryCore/obj/Debug/*
+LibraryCore/obj/Release/*
+LibraryWinForms/obj/Debug/*
+LibraryWinForms/obj/Release/*
+LibraryWPF/obj/Debug/*
+LibraryWPF/obj/Release/*
+LibraryCore/.vs/*
+LibraryWinForms/.vs/*
+LibraryWPF/.vs/*
