@@ -17,11 +17,16 @@
                 Click="RoundButton_Click" />
 
         <Button Content="GIF 播放"
-                VerticalAlignment="Top"
-                HorizontalAlignment="Left"
                 Margin="0, 30, 0, 0"
                 Padding="10"
                 FontSize="16"
                 Click="GIFPlayer_Click" />
+
+        <Button Content="顯示訊息框"
+                Margin="0, 30, 0, 0"
+                Padding="10"
+                FontSize="16"
+                Click="AlertButton_Click" />
+
     </StackPanel>
 </Window>

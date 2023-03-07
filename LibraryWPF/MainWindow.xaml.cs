@@ -1,4 +1,5 @@
-﻿using LibraryWPF.View;
+﻿using LibraryWPF.Component;
+using LibraryWPF.View;
 using System.Windows;
 
 namespace LibraryWPF
@@ -24,6 +25,11 @@ namespace LibraryWPF
         private void GIFPlayer_Click(object sender, RoutedEventArgs e)
         {
             s_GIFPlayerView.Show();
+        }
+        
+        private void AlertButton_Click(object sender, RoutedEventArgs e)
+        {
+            CustomMessageBox.Show(this, "Test");
         }
     }
 }
