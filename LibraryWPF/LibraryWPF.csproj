@@ -57,6 +57,9 @@
     </ApplicationDefinition>
     <Compile Include="ViewModel\RoundButtonViewModel.cs" />
     <Compile Include="ViewModel\ViewModelBase.cs" />
+    <Compile Include="View\GIFPlayerView.xaml.cs">
+      <DependentUpon>GIFPlayerView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\RoundButtonView.xaml.cs">
       <DependentUpon>RoundButtonView.xaml</DependentUpon>
     </Compile>
@@ -72,6 +75,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="View\GIFPlayerView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\RoundButtonView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -108,6 +115,11 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\icon_back_focus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cat.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

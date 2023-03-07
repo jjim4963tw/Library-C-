@@ -8,13 +8,20 @@
         Title="MainWindow"
         Height="450"
         Width="800">
-    <Grid>
-        <Button Content="圓角按鈕"
-                VerticalAlignment="Top"
+    <StackPanel VerticalAlignment="Top"
                 HorizontalAlignment="Left"
-                Margin="30, 30, 0, 0"
+                Margin="30, 30, 0, 0">
+        <Button Content="圓角按鈕"
                 Padding="10"
                 FontSize="16"
                 Click="RoundButton_Click" />
-    </Grid>
+
+        <Button Content="GIF 播放"
+                VerticalAlignment="Top"
+                HorizontalAlignment="Left"
+                Margin="0, 30, 0, 0"
+                Padding="10"
+                FontSize="16"
+                Click="GIFPlayer_Click" />
+    </StackPanel>
 </Window>

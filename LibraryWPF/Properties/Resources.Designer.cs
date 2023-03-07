@@ -63,6 +63,16 @@ namespace LibraryWPF.Properties {
         /// <summary>
         ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
         /// </summary>
+        internal static System.Drawing.Bitmap cat {
+            get {
+                object obj = ResourceManager.GetObject("cat", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
         internal static System.Drawing.Bitmap icon_back {
             get {
                 object obj = ResourceManager.GetObject("icon_back", resourceCulture);

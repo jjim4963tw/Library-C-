@@ -79,9 +79,9 @@
         <Button Style="{StaticResource RoundImageButtonStyle}"
                 Width="40"
                 Height="40"
-                Margin="0, 30, 0, 0"
+                Margin="30, 30, 0, 0"
                 Padding="5"
-                HorizontalAlignment="Center"
+                HorizontalAlignment="Left"
                 VerticalAlignment="Top"
                 BorderThickness="0"
                 Grid.Column="1">
