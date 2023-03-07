@@ -34,5 +34,11 @@
                 FontSize="16"
                 Click="LoadinButton_Click" />
 
+        <Button Content="Menu 選單"
+                Margin="0, 30, 0, 0"
+                Padding="10"
+                FontSize="16"
+                Click="MenuButton_Click" />
+
     </StackPanel>
 </Window>

@@ -11,6 +11,7 @@ namespace LibraryWPF
     {
         public static RoundButtonView s_RoundButtonView = new RoundButtonView();
         public static GIFPlayerView s_GIFPlayerView = new GIFPlayerView();
+        public static MenuButtonView s_MenuButtonView = new MenuButtonView();
 
         public MainWindow()
         {
@@ -26,7 +27,7 @@ namespace LibraryWPF
         {
             s_GIFPlayerView.Show();
         }
-        
+
         private void AlertButton_Click(object sender, RoutedEventArgs e)
         {
             CustomMessageBox.Show(this, "Test");
@@ -36,6 +37,11 @@ namespace LibraryWPF
         {
             LoadingView _ascLoadingView = LoadingView.ShowAlert(this, true);
             _ascLoadingView.CancelEvent += new LoadingView.CancelButtonClickMethod(this.CancelButtonClickMethod);
+        }
+
+        private void MenuButton_Click(object sender, RoutedEventArgs e)
+        {
+            s_MenuButtonView.Show();
         }
 
 

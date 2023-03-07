@@ -66,6 +66,9 @@
     <Compile Include="View\GIFPlayerView.xaml.cs">
       <DependentUpon>GIFPlayerView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\MenuButtonView.xaml.cs">
+      <DependentUpon>MenuButtonView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\RoundButtonView.xaml.cs">
       <DependentUpon>RoundButtonView.xaml</DependentUpon>
     </Compile>
@@ -90,6 +93,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="View\GIFPlayerView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\MenuButtonView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
