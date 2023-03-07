@@ -28,5 +28,11 @@
                 FontSize="16"
                 Click="AlertButton_Click" />
 
+        <Button Content="顯示載入框"
+                Margin="0, 30, 0, 0"
+                Padding="10"
+                FontSize="16"
+                Click="LoadinButton_Click" />
+
     </StackPanel>
 </Window>

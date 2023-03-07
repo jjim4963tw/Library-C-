@@ -58,6 +58,9 @@
     <Compile Include="Component\CustomMessageBox.xaml.cs">
       <DependentUpon>CustomMessageBox.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Component\LoadingView.xaml.cs">
+      <DependentUpon>LoadingView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ViewModel\RoundButtonViewModel.cs" />
     <Compile Include="ViewModel\ViewModelBase.cs" />
     <Compile Include="View\GIFPlayerView.xaml.cs">
@@ -67,6 +70,10 @@
       <DependentUpon>RoundButtonView.xaml</DependentUpon>
     </Compile>
     <Page Include="Component\CustomMessageBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Component\LoadingView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -130,6 +137,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\icon_close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\icon_loading.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

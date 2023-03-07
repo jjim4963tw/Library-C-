@@ -31,5 +31,18 @@ namespace LibraryWPF
         {
             CustomMessageBox.Show(this, "Test");
         }
+
+        private void LoadinButton_Click(object sender, RoutedEventArgs e)
+        {
+            LoadingView _ascLoadingView = LoadingView.ShowAlert(this, true);
+            _ascLoadingView.CancelEvent += new LoadingView.CancelButtonClickMethod(this.CancelButtonClickMethod);
+        }
+
+
+        #region Loading View Interface
+        public void CancelButtonClickMethod()
+        {
+        }
+        #endregion
     }
 }
