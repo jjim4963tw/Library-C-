@@ -9,7 +9,7 @@ using System.Windows;
 namespace LibraryWPF
 {
     /// <summary>
-    /// Interaction logic for App.xaml
+    /// App.xaml 的互動邏輯
     /// </summary>
     public partial class App : Application
     {

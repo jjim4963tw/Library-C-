@@ -9,12 +9,12 @@
         Height="450"
         Width="800">
     <Grid>
-        <Button Content="圓角按鈕頁面"
-                FontSize="16"
-                Padding="10"
+        <Button Content="圓角按鈕"
                 VerticalAlignment="Top"
                 HorizontalAlignment="Left"
-                Margin="24, 24, 0, 0"
+                Margin="30, 30, 0, 0"
+                Padding="10"
+                FontSize="16"
                 Click="RoundButton_Click" />
     </Grid>
 </Window>
