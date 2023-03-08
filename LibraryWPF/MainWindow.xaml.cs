@@ -20,11 +20,13 @@ namespace LibraryWPF
 
         private void RoundButton_Click(object sender, RoutedEventArgs e)
         {
+            s_RoundButtonView = new RoundButtonView();
             s_RoundButtonView.Show();
         }
 
         private void GIFPlayer_Click(object sender, RoutedEventArgs e)
         {
+            s_GIFPlayerView = new GIFPlayerView();
             s_GIFPlayerView.Show();
         }
 

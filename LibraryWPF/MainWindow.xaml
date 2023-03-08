@@ -8,9 +8,9 @@
         Title="MainWindow"
         Height="450"
         Width="800">
-    <StackPanel VerticalAlignment="Top"
-                HorizontalAlignment="Left"
-                Margin="30, 30, 0, 0">
+
+    <StackPanel HorizontalAlignment="Left"
+                Margin="30, 30, 0, 30">
         <Button Content="圓角按鈕"
                 Padding="10"
                 FontSize="16"

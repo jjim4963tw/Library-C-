@@ -61,6 +61,7 @@
     <Compile Include="Component\LoadingView.xaml.cs">
       <DependentUpon>LoadingView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ViewModel\ComboBoxViewModel.cs" />
     <Compile Include="ViewModel\RoundButtonViewModel.cs" />
     <Compile Include="ViewModel\ViewModelBase.cs" />
     <Compile Include="View\GIFPlayerView.xaml.cs">
